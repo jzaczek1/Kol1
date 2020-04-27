@@ -4,7 +4,7 @@
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:63426",
-      "sslPort": 44310
+      "sslPort": 0
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
@@ -15,7 +15,9 @@
       "launchUrl": "api/kolokwium",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "sqlDebugging": false,
+      "nativeDebugging": false
     },
     "kol1": {
       "commandName": "Project",

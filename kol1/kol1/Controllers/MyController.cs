@@ -13,12 +13,25 @@ namespace kol1.Controllers
         [HttpGet]
         public IActionResult get()
         {
-            return Ok("Działa");
+            return Ok("Get działa");
         }
+
         [HttpGet("{id}")]
         public IActionResult getSth(int id)
         {
-            return Ok(id);
+            return Ok("Get: " + id);
+        }
+
+        [HttpPost]
+        public IActionResult post()
+        {
+            return Ok("Post działa");
+        }
+
+        [HttpPost("{id}/zmienna")]
+        public IActionResult postSth(int id)
+        {
+            return Ok("Post: " + id);
         }
     }
 }
